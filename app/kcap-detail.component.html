@@ -1,0 +1,27 @@
+<div *ngIf="kCap">
+  <h2>{{kCap.name}}</h2>
+  <div><label>ID: </label>{{kCap.id}}</div>
+  <div><label>Name: </label>{{kCap.name}}</div>
+  <div><label>RSSI: </label>{{kCap.rssi}}</div>
+  <div><label>NPI: </label>{{kCap.capFill.fill.prescription.pharmacy.npi}}</div>
+  <div><label>Pill Quantity:</label>{{kCap.capFill.fill.prescription.pillQuantity}}</div>
+  <div><label>Active? </label>{{kCap.capFill.fill.prescription.active}}</div>
+  <div><label>Last Update: </label>{{kCap.capFill.fill.prescription.lastUpdate}}</div>
+  <div><label>Refill Number: </label>{{kCap.capFill.fill.prescription.refillCount}}</div>
+  <div><label>Rx: </label>{{kCap.capFill.fill.prescription.pharmacyPrescriptionId}}</div>
+  <div><label>Time Prescribed: </label>{{kCap.capFill.fill.timePrescribed}}</div>
+  <div><label>Patient: </label>{{kCap.capFill.fill.metaData.nameOnCap}}</div>
+  <div><label>ZipCode: </label>{{kCap.capFill.fill.metaData.zipCodeOnCap}}</div>
+  <div><label>Base Station: </label>{{kCap.capFill.fill.baseStation.uniqueId}}</div>
+  <div><label>Mode: </label>{{kCap.capFill.mode}}</div>
+  <div><label>Intervals: </label>{{kCap.capFill.intervals}}</div>
+  <div>
+    <label>Usages: </label>
+    <input [(ngModel)]="kCap.capUsages.timeSince" placeholder="usages">
+  </div>
+  <div>
+    <button (click)="sendFill()">Send Fill Data</button>
+    <button (click)="sendUsage()">Send Usage Data</button>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>

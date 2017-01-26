@@ -1,0 +1,8 @@
+<h3>Caps In Range</h3>
+<div class="grid grid-pad">
+  <div *ngFor="let kcap of kcaps" [routerLink]="['/detail', kcap.id]" class="col-1-4">
+    <div class="module kcap">
+      <h4>{{kcap.name}}: {{kcap.id | uppercase}}</h4>
+    </div>
+  </div>
+</div>
