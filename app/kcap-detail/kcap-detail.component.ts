@@ -2,15 +2,15 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { KCap } from './kcap';
-import { KCapService } from './kcap.service';
+import { KCap } from '../kcap/kcap';
+import { KCapService } from '../kcap.service/kcap.service';
 
 import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'my-kcap-detail',
-  templateUrl: 'app/kcap-detail.component.html',
-  styleUrls: [ 'app/kcap-detail.component.css' ]
+  templateUrl: 'app/kcap-detail/kcap-detail.component.html',
+  styleUrls: [ 'app/kcap-detail/kcap-detail.component.css' ]
 })
 export class KCapDetailComponent implements OnInit {
   @Input() kCap: KCap;

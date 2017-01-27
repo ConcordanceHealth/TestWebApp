@@ -5,11 +5,11 @@ import { RouterModule }   from '@angular/router';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent }   from './app.component';
-import { DashboardComponent } from './dashboard.component';
-import { KCapDetailComponent } from './kcap-detail.component';
-import { KCapsComponent } from './kcaps.component';
-import { KCapService } from './kcap.service';
-import { GoogleDriveProvider } from './google-drive';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { KCapDetailComponent } from './kcap-detail/kcap-detail.component';
+import { KCapsComponent } from './kcaps.component/kcaps.component';
+import { KCapService } from './kcap.service/kcap.service';
+import { GoogleDriveProvider } from './google-drive/google-drive';
 
 
 @NgModule({

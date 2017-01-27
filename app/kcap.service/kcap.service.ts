@@ -3,9 +3,9 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { KCap } from './kcap';
+import { KCap } from '../kcap/kcap';
 //import { DUMMYCAPS } from './mock-kcaps';
-import { GoogleDriveProvider } from './google-drive';
+import { GoogleDriveProvider } from '../google-drive/google-drive';
 
 @Injectable()
 export class KCapService {

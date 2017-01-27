@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { KCap } from './kcap';
-import { KCapService } from './kcap.service';
+import { KCap } from '../kcap/kcap';
+import { KCapService } from '../kcap.service/kcap.service';
 
 @Component({
   moduleId: module.id,

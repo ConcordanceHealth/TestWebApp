@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { KCap } from './kcap';
-import { KCapService } from './kcap.service';
+import { KCap } from '../kcap/kcap';
+import { KCapService } from '../kcap.service/kcap.service';
 
 @Component({
   selector: 'my-kcaps',
